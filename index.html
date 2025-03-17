@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMICalculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="navigation">
+
+            <div id="leftnav">
+
+                <p><a href="index.html"><span>F</span>it<span>B</span>uddy</a></p>
+
+            </div>
+
+            <div id="rightnav">
+
+                <div id="bmiCalci"><a href="#">BMI Calculator</a></div>
+
+                <div id="about"><a href="#">About</a></div>
+
+                <div id="contact"><a href="#">Contact</a></div>
+
+            </div>
+
+        </div>
+
+        <div class="Calculator_container">
+
+            <div class="Calci">
+
+                <div id="inputDetails">
+
+                    <div class="inputs" id="forsex">
+
+                        <div class="formHead">
+
+                            <label for="sex">Sex</label>
+
+                        </div>
+
+                        <div class="formdata">
+
+                            <input type="radio" name="sex" id="male" checked>
+                            <label for="male">Male</label>
+
+                        </div>
+
+                        <div class="formdata">
+
+                            <input type="radio" name="sex" id="female">
+                            <label for="female">Female</label>
+
+                        </div>
+
+                    </div>
+
+                    <div class="inputs" id="forheight">
+
+                            <div class="formHead">
+
+                                <label for="height">Height ( in cm )</label>
+
+                            </div>
+
+                            <div class="formdata" id="heightdata">
+
+                                <input type="number" value="170" id="height" min="1" max="300">
+
+                            </div>
+
+                    </div>
+
+                    <div class="inputs" id="forweight">
+
+                        <div class="formHead">
+
+                            <label for="weight">Weight ( in Kg )</label>
+
+                        </div>
+
+                        <div class="formdata">
+
+                            <input type="text" value="60" id="weight">
+
+                        </div>
+
+                    </div>
+
+                    <div class="inputs" id="tosubmit">
+                        
+                        <button id="button">Submit</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="result_container">
+
+            <div class="indicator">
+
+                <div class="data">
+
+                    <div><h1>BMI RANGE</h1></div>
+
+                    <ul>
+
+                        <li><b>Underweight : </b>Less than 18.5</li>
+                        <li><b>Normal weight : </b>18.5 to 24.9</li>
+                        <li><b>Overweight : </b>25 to 29.9</li>
+                        <li><b>Class 1 (Mild obesity) : </b>30 to 34.9</li>
+                        <li><b>Class 2 (Moderate obesity) : </b>35 to 39.9</li>
+                        <li><b>Class 3 (Severe obesity) : </b>40 and above</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="result">
+
+                <div class="calcires">
+
+                    <div class="calciline"><b>Your BMI is :</b></div>
+
+                    <div id="calcival">20.8</div>
+
+                </div>
+
+                <div id="wordres">
+
+                    You are NORMAL!!
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
