@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(243, 243, 243);
+}
+
+.navigation{
+    width: 100%;
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8%;
+    background-color: #D3D3D3;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 6fr;
+    grid-template-areas: 
+    "nav nav"
+    "left right"
+    ;
+}
+
+#leftnav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 200%;
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #64adc5;
+    background-color: #D3D3D3;
+}
+
+#leftnav span{
+    color: #2F4F4F;
+    background-color: #D3D3D3;
+}
+
+#leftnav p{
+    background-color: #D3D3D3;
+}
+
+#rightnav{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 140%;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #333333;
+    background-color: #D3D3D3;
+}
+
+#rightnav div{
+    background-color: #D3D3D3;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: inherit;
+    background-color: #D3D3D3;
+}
+
+#rightnav div:hover{
+    color: #2F4F4F;
+    font-weight: 700;
+}
+
+.Calculator_container{
+    grid-area: left;
+    padding: 5% 0%;
+    display: flex;
+    justify-content: center;
+}
+
+.Calci{
+    width: 100%;
+    width: fit-content;
+    width: 400px;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px solid #333333;
+    padding: 4%;
+    background-color: white;
+}
+
+#inputDetails{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 5%;
+    padding-bottom: 3%;
+    border-radius: 20px;
+    flex-direction: column;
+    color: #333333;
+}
+
+.inputs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#forsex{
+    height: 26%;
+}
+
+#forheight{
+    height: 28%;
+}
+
+#forweight{
+    height: 28%;
+}
+
+#tosubmit{
+    height: 16%;
+    align-items: center;
+    justify-content: center;
+}
+
+#button{
+    font-size: 120%;
+    border: 2px solid #333333;
+    border-radius: 5px;
+    padding: 2% 5%;
+    background-color: #333333;
+    color: rgb(243, 243, 243);
+    transition: all 0.05s linear;
+}
+
+#button:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.formHead{
+    font-weight: 1000;
+    font-size: 110%;
+}
+
+#forsex .formHead{
+    font-size: 130%;
+}
+
+.formdata{
+    font-size: 130%;
+    color: #2F4F4F;
+}
+
+#height{
+    width: 100%;
+    font-size: 120%;
+    padding: 2% 5%;
+    border: 2px solid #333333;
+    border-radius: 5px;
+    color: #2F4F4F;
+}
+
+#weight{
+    width: 100%;
+    font-size: 120%;
+    padding: 2% 5%;
+    border: 2px solid #333333;
+    border-radius: 5px;
+    color: #2F4F4F;
+}
+
+.result_container{
+    width: 100%;
+    height: 100%;
+    grid-area: right;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 2%;
+}
+
+.indicator{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result{
+    width: 100%;
+    height: 45%;
+}
+
+.data{
+    width: 350px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6%;
+    font-size: 110%;
+}
+
+.data div{
+    text-align: center;
+}
+
+.data b{
+    color: #333333;
+}
+
+.data h1{
+    color: #2F4F4F;
+}
+
+.data ul li{
+    color: #2F4F4F;
+    padding: 2.8px 0;
+    font-size: 120%;
+    list-style-type: none;
+}
+
+.calcires{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.calciline{
+    color: #333333;
+    font-size: 130%;
+}
+
+#calcival{
+    color: #2F4F4F;
+    font-size: 7rem;
+    line-height: 0.9;
+}
+
+#wordres{
+    width: 100%;
+    text-align: center;
+    font-size: 180%;
+    color: green;
+}
+
+@media(max-width:849px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 17% 70% 70%;
+        grid-template-areas: 
+        "nav"
+        "left"
+        "right"
+        ;
+    }
+    .indicator{
+        height: fit-content;
+    }
+    .data{
+        height: fit-content;
+    }
+    .result{
+        padding-top: 40px;
+    }
+    #about{
+        display: none;
+    }
+    #contact{
+        display: none;
+    }
+    #rightnav{
+        width: fit-content;
+        justify-content: center;
+    }
+}
+
+@media(max-width:499px){
+    #bmiCalci{
+        display: none;
+    }
+}
+
+@media(max-width:649px){
+    .Calci{
+        width: fit-content;
+    }
+}
+
+@media(max-width:424px){
+    #inputDetails{
+        width: 240px; 
+    }
+    .data{
+        width: 100%;
+        text-align: center;
+        padding: 0 20px;
+    }
+}
+
+
+@media(max-width:999px)and(min-width:850px){
+    .Calci{
+        width: fit-content;
+    }
+}
